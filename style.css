@@ -115,3 +115,29 @@ nav ul a{
     transform: scale(1.3);
     color: grey;
 }
+
+/*Section */
+section{
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    background-color: #202026;
+}
+
+.section-heading{
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+/* About Section */
+.about-para{
+    width: 65%;
+    color: white;
+}
+.about-para p{
+    text-align: center;
+    padding: 2.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
