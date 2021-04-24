@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
 }
+.center{
+    text-align: center;
+}
 
 /*Header*/
 
@@ -53,6 +56,7 @@ nav ul a{
 #particle-canvas {
   width: 100%;
   height: 90%;
+  /*z-index: -2;*/
 }
 
 #main_heading{
@@ -74,7 +78,7 @@ nav ul a{
     margin-top: 22rem;
     margin-left: 4rem;
 	position: absolute;
-    z-index: 2;
+    z-index: 200;
 }
 .btn{
 	font-weight: 700;
@@ -139,15 +143,19 @@ section{
 	justify-content: center;
 	align-items: center;
     flex-direction:row;
+    flex-wrap: wrap;
 }
-.about-img{
+#about-img{
+    width: 50%;
+}
+.img{
 	height: 20rem;
-	width: 30rem;
+	width: 85%;
 	padding: 20px;
 	margin: 0rem 5rem 1rem 2rem;
 }
 .about-para{
-    width: 45%;
+    width: 50%;
     color: white;
 }
 .about-para p{
@@ -158,12 +166,17 @@ section{
 }
 
 /* About Section ends*/
-
+#wrap{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
 /* Education Section*/
 #education{
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 	width: 50%;
 }
+
 #edu-container{
     display: flex;
 	justify-content: center;
@@ -171,25 +184,48 @@ section{
     flex-direction:column;
 }
 .edu-box{
-	border: 3px solid green;
+	/*border: 3px solid green;*/
     background-color: #202026;
 	width: 85%;
+    padding: 3%;
+    margin-bottom: 3%;
+    box-shadow: 2px 0px 6px 0px black;
 }
 .edu-heading{
     font-size: 1.5rem;
     font-weight: 900;
-    /*padding: 15px;*/
-    color: white;
+    margin-left: 2%;
+    color: pink;
 }
 .edu-para{
     font-weight: 600;
     font-size: 1rem;
+    margin-left: 2%;
+    color: white;
     padding: 2px;
 }
 /* Education Section ends*/
 
 /*SKills Section*/
 #skills{
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 	width: 50%;
+}
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: 2px solid white;*/
+    padding: 4%;
+}
+.skill-container span{
+    border: 2px solid pink;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    /*box-shadow: 2px 0px 6px 0px black;*/
+    border-radius: 5px;
+    background-color: #202026;
 }
