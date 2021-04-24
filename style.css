@@ -24,8 +24,20 @@ header{
 nav{
     margin-top: 0rem;
     height: 10%;
-    background-color: #202026;
-    /*border: 2px solid white;*/
+    background-color: #212529;
+    position: sticky;
+}
+.brand{
+    position: relative;
+    left: -60%;
+}
+.brand h1{
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: white;
+}
+.brand h1 span{
+    color: pink;
 }
 nav ul{
 	margin-left: 40%;
@@ -44,12 +56,7 @@ nav ul a{
 	vertical-align: middle;
 }
 
-#resume{
-    /*border: 2px solid white;*/
-}
 #resume a{
-    /*border: 2px solid pink;*/
-    /*background-color: #0bceaf;*/
     color: pink;
 }
 
@@ -84,8 +91,9 @@ nav ul a{
 	font-weight: 700;
 	background: none;
 	outline: none;
-	width: 9rem;
+	width: 15%;
 	font-size: 2rem;
+    padding: 1%;
 	color: pink;
 	cursor: pointer;
 }
@@ -239,6 +247,9 @@ section{
 .address{
     width: 50%;
     color: white;
+    height: auto;
+    /*background-color: #202026;*/
+    box-shadow: 0px 2px 5px 3px #202026;
 }
 .getTouch{
     width: 85%;
@@ -272,7 +283,7 @@ section{
 }
 
 #listItems{
-    margin-top: 1%;
+    margin-top: 8%;
 }
 .list li{
     margin: 0px 10px;
@@ -292,8 +303,16 @@ section{
     transform: scale(1.3);
     color: pink;
 }
-
 #map{
-    width: 50%;
-    padding: 2% 5%;
+    /*width: 50%;*/
+    padding: 1% 2%;
+    /*box-shadow: 0px 2px 20px 2px black;*/
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    color: white;
+    background-color: #212529;
+    height: 5.5rem;
 }
