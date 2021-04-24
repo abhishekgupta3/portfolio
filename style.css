@@ -91,7 +91,7 @@ nav ul a{
 	font-weight: 700;
 	background: none;
 	outline: none;
-	width: 15%;
+	width: 9rem;
 	font-size: 2rem;
     padding: 1%;
 	color: pink;
@@ -150,7 +150,6 @@ section{
 
 /* Education Section*/
 #education{
-	/*border: 2px solid white;*/
 	width: 50%;
 }
 
@@ -306,7 +305,6 @@ section{
 #map{
     /*width: 50%;*/
     padding: 1% 2%;
-    /*box-shadow: 0px 2px 20px 2px black;*/
 }
 
 /*footer*/
@@ -315,4 +313,76 @@ footer{
     color: white;
     background-color: #212529;
     height: 5.5rem;
+}
+
+/* Responsive */
+ @media screen and (max-width: 1140px){
+    nav ul{
+        margin-left: 35%;
+    }
+    .brand{
+        left: -50%;
+    }
+}
+ @media screen and (max-width: 1040px){
+    .brand{
+        left: -30%;
+    }
+    nav ul{
+        margin-left: 25%;
+    }
+}
+ @media screen and (max-width: 975px){
+    #main_heading{
+        font-size: 3rem;
+    }
+}
+ @media screen and (max-width: 910px){
+    nav ul li{
+        display: none;
+    }
+    .brand{
+        display: block;
+        left: -60%;
+        margin: auto;
+    }
+}
+ @media screen and (max-width: 850px){
+    #main_heading{
+        text-align: center;
+        margin-left: 5%;
+        padding: 2%;
+    }
+    .contact-container{
+        flex-direction: column-reverse;
+    }
+    .address{
+        width: 100%;
+    }
+}
+ @media screen and (max-width: 800px){
+    #main_heading{
+        text-align: center;
+        margin-left: 5%;
+        padding: 2%;
+    }
+    #about-container{
+        flex-direction: column;
+    }
+    .about-para{
+        width: 85%;
+    }
+    #about-img{
+        width:85%;
+    }
+    #wrap{
+        flex-direction: column;
+    }
+    #education{
+        width: 100%;
+    }
+    #skills{
+        width: 100%
+    }
+
 }
