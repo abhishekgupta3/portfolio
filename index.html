@@ -32,26 +32,8 @@
      	<div id="main_heading">
         	<p>Hi, my name is <span >Abhishek Gupta</span></p>
             <p>I'm a sofware Developer.</p>
-        </div>
+      </div>
 
-      <!-- <div id ="listItems">
-        <ul class="flex list">
-          <li>
-            <a href="http://linkedin.com/in/fa1k0n/"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/abhishekgupta3"><i class="fab fa-github"></i></a>
-          </li>
-          <li><a href="https://auth.geeksforgeeks.org/user/212iq/practice"><i class="fas fa-code"></i
-          ></a>
-          </li>
-          <li><a href="mailto:abhigupta.4g@gmail.com"><i class="fab fa-google"></i></a>
-          </li>
-          <li>
-          	<a href="https://www.quora.com/profile/Abhishek-Gupta-2469"><i class="fab fa-quora"></i></a>
-          </li>
-        </ul>
-      </div> -->
         <!-- Resume Link -->
         <p class="main_button"><button class="btn"><a>Resume</a></button></p>
         <div id="particle-canvas"></div>
@@ -61,7 +43,6 @@
     <!-- about section -->
     <section id="about" class="flex">
         <h1 class="section-heading">
-            <span><i class="fas fa-graduation-cap"></i></span>
             <span class="dark">ABOUT ME</span>
         </h1>
         <div id="about-container">
@@ -106,7 +87,7 @@
 
         <section id="skills">
     	      <h1 class="section-heading center">
-                <span><i class="fas fa-graduation-cap"></i></span>
+                <span><i class="fas fa-chalkboard-teacher dark"></i></span>
                 <span>SKILLS</span>
             </h1>
             <div class="skill-container">
@@ -117,8 +98,95 @@
                 <span>Data Science</span> <span>Bootstrap</span> <span>HTML/CSS</span>
             </div>
         </section>
-
    </div>
+
+   <!-- projects section -->
+
+   <section id="projects" class="flex">
+      <h1 class="section-heading ">
+        <span><i class="fas fa-tasks"></i></span>
+        <span>PROJECTS</span>
+      </h1>
+      <div class="flex project-container">
+        <div class="project-box">
+          <a href="https://github.com/abhishekgupta3/Daily-Journal-Blog">
+          <h1 class="pro-heading"> Blog Application</h1>
+          <p class="pro-para">Nov 2020 to present</p>
+          <p class="pro-para">A simple blog Web app. Developed using Node, Express, MongoDB. Users can post and read blogs. Authentication using Passport.js</p>
+          </a>
+        </div>
+
+        <div class="project-box">
+          <a href="https://github.com/abhishekgupta3/CoronaTracker">
+          <h1 class="pro-heading" >COVID-19 Tracker</h1>
+          <p class="pro-para">August 2020 to present</p>
+          <p class="pro-para">
+            Developed a corona virus tracker that fetches data using AJAX. Mapbox used to display the number of total cases worldwide. 
+          </p>
+        </a>
+        </div>
+
+        <div class="project-box">
+          <a>
+          <h1 class="pro-heading">Auto Suggest and Auto Complete</h1>
+          <p class="pro-para">Feb 2021 - Mar 2021</p>
+          <p class="pro-para">Implemented the auto suggest feature using Trie Data Structure, which gives completion options based on user’s incomplete written words.</p>
+          </a>
+        </div>
+
+        <div class="project-box">
+          <a>
+          <h1 class="pro-heading">Sentiment Analysis</h1>
+          <p class="pro-para">Mar 2021 - Apr 2021 </p>
+          <p class="pro-para">Perfomed sentiment analysis on Kaggle Twitter 1.6 million tweets using NLTK. Used NLP techniques like Lemmatization and TF-IDF Vectorizer.</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="flex">
+      <h1 class="section-heading">
+        <span><i class="fas fa-address-book"></i></span>
+        <span class="light">CONTACT</span>
+      </h1>
+
+      <div class="contact-container">
+          <div class="address">
+              <div class="getTouch">
+                  <h1>Get in Touch</h1>
+                  <p>Want to get in touch? I'll like to hear from you. Drop me an email.
+                  </p>
+              </div>
+              <div class="my-address">
+                  <h1 >My Address</h1>
+                  <p><span><i class="fas fa-compass"></i></span>Mumbai, India </p>
+                  <p><span><i class="far fa-envelope"></i></span>abhigupta3@outlook.com</p>
+              </div>
+              <div id ="listItems">
+                  <ul class="flex list">
+                      <li>
+                        <a href="http://linkedin.com/in/fa1k0n/"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/abhishekgupta3"><i class="fab fa-github"></i></a>
+                      </li>
+                      <li><a href="https://auth.geeksforgeeks.org/user/212iq/practice"><i class="fas fa-code"></i></a>
+                      </li>
+                      <li><a href="mailto:abhigupta.4g@gmail.com"><i class="fab fa-google"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.quora.com/profile/Abhishek-Gupta-2469"><i class="fab fa-quora"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30165.66210531707!2d72.98105034555208!3d19.076582232582787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c136b519107b%3A0x8452b99754be0fc8!2sVashi%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1619265292386!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+      </div>
+    </section>
 
 
 

@@ -90,38 +90,6 @@ nav ul a{
 	cursor: pointer;
 }
 
-/*#listItems{
-	position: absolute;
-    border: 2px solid pink;
-    margin-top: 22rem;
-    margin-left: 35%;
-    z-index: 2;
-    background-color: red;
-}
-.list li{
-    margin: 0px 10px;
-    font-size: 1.5rem;
-}
-.list li a{
-    cursor: pointer;
-    padding: 7px;
-}
-.list li a:hover{
-    color: grey;
-    cursor: pointer;
-}
-.list li a i{
-    cursor: pointer;
-    color: grey;
-    border-radius: 50%;
-    transition: none;
-}
-.list li a i:hover{
-    cursor: pointer;
-    transform: scale(1.3);
-    color: grey;
-}*/
-
 /*Header ends */
 
 /*Section */
@@ -171,6 +139,7 @@ section{
     flex-direction: row-reverse;
     flex-wrap: wrap;
 }
+
 /* Education Section*/
 #education{
 	/*border: 2px solid white;*/
@@ -189,7 +158,7 @@ section{
 	width: 85%;
     padding: 3%;
     margin-bottom: 3%;
-    box-shadow: 2px 0px 6px 0px black;
+    box-shadow: 2px 0px 10px 0px black;
 }
 .edu-heading{
     font-size: 1.5rem;
@@ -208,7 +177,6 @@ section{
 
 /*SKills Section*/
 #skills{
-	/*border: 2px solid white;*/
 	width: 50%;
 }
 
@@ -217,7 +185,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /*border: 2px solid white;*/
     padding: 4%;
 }
 .skill-container span{
@@ -225,7 +192,108 @@ section{
     padding: 2%;
     margin: 2%;
     color: white;
-    /*box-shadow: 2px 0px 6px 0px black;*/
     border-radius: 5px;
     background-color: #202026;
+}
+
+/*Projects section starts*/
+.project-container{
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-bottom: 1rem;
+}
+
+.project-box{
+    width: 40%;
+    margin: 2rem;
+    height: auto;
+    border-radius: 10px;
+    background-color: #202026;
+    background: none;
+    box-shadow: 0px 2px 20px 2px black;
+}
+
+.pro-heading{
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 4%;
+    padding: 10px;
+    color: pink;
+}
+.pro-para{
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 4%;
+    padding: 5px;
+    padding-bottom: 7px;
+}
+
+/*Contact */
+
+.contact-container{
+    display: flex;
+}
+.address{
+    width: 50%;
+    color: white;
+}
+.getTouch{
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    padding: 3% 5%;
+}
+.getTouch h1{
+    color: pink;
+   font-weight: 700;
+   margin-bottom: 1%;
+}
+.my-address{
+    flex-direction: column;
+    width: 85%;
+    padding: 1% 5%;
+    text-align: center;
+    margin: auto;
+}
+.my-address i{
+    margin-right: 3%;
+    color: white;
+}
+.my-address h1{
+    color: pink;
+    padding: 1%;
+}
+.my-address p{
+    padding: 1%;
+}
+
+#listItems{
+    margin-top: 1%;
+}
+.list li{
+    margin: 0px 10px;
+    font-size: 1.3rem;
+    padding: 2% 0.5%;
+
+}
+.list li a{
+    padding: 2%;
+}
+.list li a i{
+    color: white;
+    border-radius: 50%;
+    transition: none;
+}
+.list li a i:hover{
+    transform: scale(1.3);
+    color: pink;
+}
+
+#map{
+    width: 50%;
+    padding: 2% 5%;
 }
