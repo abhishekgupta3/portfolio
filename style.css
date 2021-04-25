@@ -21,18 +21,14 @@
 
 header{
     height: 100vh;
-    overflow: hidden;
 }
-nav{
-    margin-top: 0rem;
+header .brand{
+    position: absolute;
+    /*border: 2px solid white;*/
+    margin-top: 0;
+    margin-left: 8vw;
+    z-index: 500;
     height: 8vh;
-    background-color: #212529;
-    position: sticky;
-    overflow: hidden;
-}
-.brand{
-    position: relative;
-    left: -65%;
 }
 .brand h1{
     font-size: 1.9rem;
@@ -42,9 +38,15 @@ nav{
 .brand h1 span{
     color: pink;
 }
+nav{
+    margin-top: 0rem;
+    height: 8vh;
+    background-color: #212529;
+    position: sticky;
+}
 nav ul{
-    overflow: hidden;
-	margin-left: 40%;
+    overflow-y: hidden;
+	margin-left: 45%;
 	height: 100%;
 }
 
@@ -322,19 +324,9 @@ footer{
 
 /* Responsive */
  @media screen and (max-width: 1140px){
-    nav ul{
-        margin-left: 35%;
-    }
-    .brand{
-        left: -50%;
-    }
 }
  @media screen and (max-width: 1040px){
     .brand{
-        left: -30%;
-    }
-    nav ul{
-        margin-left: 25%;
     }
 }
  @media screen and (max-width: 975px){
@@ -347,14 +339,9 @@ footer{
         display: none;
     }
     .brand{
-        display: block;
-        left: -60%;
     }
 }
  @media screen and (max-width: 850px){
-    #main_heading{
-        /*padding: 2%;*/
-    }
     .contact-container{
         flex-direction: column-reverse;
     }
@@ -368,6 +355,9 @@ footer{
         margin-left: 6vw;
         font-size: 2.7rem;
         text-align: left;
+    }
+    .main_button{
+        margin-left: 6vw;
     }
     #about-container{
         flex-direction: column;
@@ -399,11 +389,12 @@ footer{
     .project-box{
         width: 80%;
     }
-    .brand{
-        left: -55%;
-    }
 }
 @media screen and (max-width: 580px){
+    .brand h1 span{
+        font-size: 1.6rem;
+    }
+
     #main_heading{
         margin-top: 20vh;
     }
@@ -419,9 +410,6 @@ footer{
     }
 }
 @media screen and (max-width: 420px){
-    #main_heading{
-        margin-top: 20vh;
-    }
     .about-para{
         width: 95%;
     }
@@ -439,6 +427,9 @@ footer{
     }
 }
 @media screen and (max-width: 350px){
+    header .brand{
+        margin-left: 2vw;
+    }
     #main_heading{
         font-size: 2.5rem;
     }
@@ -449,8 +440,5 @@ footer{
 @media screen and (max-width: 320px){
     #main_heading{
         margin-top: 12vh;
-    }
-    .main_button{   
-        margin-top: 65vh; 
     }
 }
