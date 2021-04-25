@@ -6,6 +6,7 @@
     list-style: none;
     scroll-behavior: smooth;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 .flex{
     display: flex;
@@ -20,16 +21,18 @@
 
 header{
     height: 100vh;
+    overflow: hidden;
 }
 nav{
     margin-top: 0rem;
     height: 10%;
     background-color: #212529;
     position: sticky;
+    overflow: hidden;
 }
 .brand{
     position: relative;
-    left: -60%;
+    left: -65%;
 }
 .brand h1{
     font-size: 1.9rem;
@@ -40,6 +43,7 @@ nav{
     color: pink;
 }
 nav ul{
+    overflow: hidden;
 	margin-left: 40%;
 	height: 100%;
 }
@@ -62,13 +66,13 @@ nav ul a{
 
 #particle-canvas {
   width: 100%;
+  overflow: hidden;
   height: 90%;
   /*z-index: -2;*/
 }
 
 #main_heading{
 	position: absolute;
-    /*border: 2px solid pink;*/
     margin-top: 10rem;
     margin-left: 4rem;
     font-size: 3.5rem;
@@ -302,9 +306,9 @@ section{
     transform: scale(1.3);
     color: pink;
 }
-#map{
+#map iframe{
     /*width: 50%;*/
-    padding: 1% 2%;
+    padding: 1% 3%;
 }
 
 /*footer*/
@@ -313,6 +317,7 @@ footer{
     color: white;
     background-color: #212529;
     height: 5.5rem;
+    text-align: center;
 }
 
 /* Responsive */
@@ -344,7 +349,6 @@ footer{
     .brand{
         display: block;
         left: -60%;
-        margin: auto;
     }
 }
  @media screen and (max-width: 850px){
@@ -361,10 +365,14 @@ footer{
     }
 }
  @media screen and (max-width: 800px){
-    #main_heading{
-        text-align: center;
-        margin-left: 5%;
-        padding: 2%;
+     #main_heading{
+        margin-top: 8rem;
+        margin-left: 2%;
+        font-size: 2.7rem;
+        text-align: left;
+    }
+    .main_button{   
+        margin-left: 5%; 
     }
     #about-container{
         flex-direction: column;
@@ -385,4 +393,70 @@ footer{
         width: 100%
     }
 
+}
+@media screen and (max-width: 680px){
+    #main_heading{
+        font-size: 2.9rem;
+    }
+    .project-box{
+        width: 80%;
+    }
+    .brand{
+        left: -55%;
+    }
+}
+@media screen and (max-width: 580px){
+    .main_button{   
+        margin-top: 25rem;
+    }
+    #map{
+        margin: auto;
+        width: 80%;
+    }
+    #map iframe{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+     #main_heading{
+        margin-top: 8rem;
+        margin-left: 2%;
+    }
+    .main_button{   
+        margin-top: 25rem;
+        margin-left: 3%; 
+    }
+}
+@media screen and (max-width: 420px){
+    #main_heading{
+        font-size: 2.6rem;
+    }
+    .about-para{
+        width: 95%;
+    }
+    .about-para p{
+        text-align: left;
+    }
+    #about-img{
+        width: 92%;
+    }
+    .img{
+        height: 15rem;
+        width: 90%;
+        padding: 20px;
+        margin: 0rem 0rem 1rem 1rem;
+    }
+}
+@media screen and (max-width: 350px){
+    #main_heading{
+        font-size: 2.2rem;
+    }
+    .main_button{   
+        margin-top: 22rem;
+    }
+}
+@media screen and (max-width: 320px){
+    #main_heading{
+        margin-top: 6rem;
+    }
 }
