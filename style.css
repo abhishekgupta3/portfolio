@@ -62,10 +62,6 @@ nav ul a{
 	vertical-align: middle;
 }
 
-#resume a{
-    color: pink;
-}
-
 #particle-canvas {
   width: 100%;
   overflow: hidden;
@@ -94,6 +90,7 @@ nav ul a{
     z-index: 200;
 }
 .btn{
+    border: none;
 	font-weight: 700;
 	background: none;
 	outline: none;
@@ -103,7 +100,11 @@ nav ul a{
 	color: pink;
 	cursor: pointer;
 }
-
+.btn:hover{
+    transition: all .3s ease-in-out;
+    -webkit-text-fill-color: #fff;
+    /*color: white;*/
+}
 /*Header ends */
 
 /*Section */
@@ -301,7 +302,7 @@ section{
 }
 .list li a i{
     color: white;
-    border-radius: 50%;
+    border-radius: 0;
     transition: none;
 }
 .list li a i:hover{
