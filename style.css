@@ -25,7 +25,7 @@ header{
 }
 nav{
     margin-top: 0rem;
-    height: 10%;
+    height: 8vh;
     background-color: #212529;
     position: sticky;
     overflow: hidden;
@@ -67,14 +67,14 @@ nav ul a{
 #particle-canvas {
   width: 100%;
   overflow: hidden;
-  height: 90%;
+  height: 92vh;
   /*z-index: -2;*/
 }
 
 #main_heading{
 	position: absolute;
-    margin-top: 10rem;
-    margin-left: 4rem;
+    margin-top: 30vh;
+    margin-left: 8vw;
     font-size: 3.5rem;
     font-weight: 900;
     color: white;
@@ -86,8 +86,8 @@ nav ul a{
 
 .main_button{
     border: 2px solid pink;
-    margin-top: 22rem;
-    margin-left: 4rem;
+    margin-top: 58vh;
+    margin-left: 8vw;
 	position: absolute;
     z-index: 200;
 }
@@ -353,9 +353,7 @@ footer{
 }
  @media screen and (max-width: 850px){
     #main_heading{
-        text-align: center;
-        margin-left: 5%;
-        padding: 2%;
+        /*padding: 2%;*/
     }
     .contact-container{
         flex-direction: column-reverse;
@@ -366,13 +364,10 @@ footer{
 }
  @media screen and (max-width: 800px){
      #main_heading{
-        margin-top: 8rem;
-        margin-left: 2%;
+        margin-top: 30vh;
+        margin-left: 6vw;
         font-size: 2.7rem;
         text-align: left;
-    }
-    .main_button{   
-        margin-left: 5%; 
     }
     #about-container{
         flex-direction: column;
@@ -394,9 +389,12 @@ footer{
     }
 
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 685px){
     #main_heading{
-        font-size: 2.9rem;
+        margin-top: 25vh;
+    }
+    .main_button{   
+        margin-left: 6vw; 
     }
     .project-box{
         width: 80%;
@@ -406,8 +404,11 @@ footer{
     }
 }
 @media screen and (max-width: 580px){
+    #main_heading{
+        margin-top: 20vh;
+    }
     .main_button{   
-        margin-top: 25rem;
+        margin-top: 60vh;
     }
     #map{
         margin: auto;
@@ -417,19 +418,9 @@ footer{
         width: 100%;
     }
 }
-@media screen and (max-width: 500px){
-     #main_heading{
-        margin-top: 8rem;
-        margin-left: 2%;
-    }
-    .main_button{   
-        margin-top: 25rem;
-        margin-left: 3%; 
-    }
-}
 @media screen and (max-width: 420px){
     #main_heading{
-        font-size: 2.6rem;
+        margin-top: 20vh;
     }
     .about-para{
         width: 95%;
@@ -449,14 +440,17 @@ footer{
 }
 @media screen and (max-width: 350px){
     #main_heading{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .main_button{   
-        margin-top: 22rem;
+        margin-top: 65vh; 
     }
 }
 @media screen and (max-width: 320px){
     #main_heading{
-        margin-top: 6rem;
+        margin-top: 12vh;
+    }
+    .main_button{   
+        margin-top: 65vh; 
     }
 }
