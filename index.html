@@ -36,7 +36,7 @@
       </div>
 
         <!-- Resume Link -->
-        <p class="main_button"><button class="btn from-right"><a>Resume</a></button></p>
+        <p class="main_button"><button class="btn from-right"><a href="https://drive.google.com/file/d/1N2gMpATIR6E41r66VyFoNd_-pE1LIiVQ/view?usp=sharing">Resume</a></button></p>
         <div id="particle-canvas"></div>  
     </header>
 
@@ -53,9 +53,8 @@
             <p class="dark">
               Hello, I am Abhishek a second year undergraduate at IIT Patna,
               pursuing a major in Electronics and Electrical Engineering. I have a
-              keen interest in competitive programming and love solving problems
-              which also paved my path towards development. I have worked with NodeJs, ExpressJS, MongoDB, Mongoose, ReactJs, Bootstrap,
-              HTML, CSS. Currently i'am exploring data science and Machine Learning.
+              keen interest in programming and love solving problems
+              which also paved my path towards development.
             </p>
             </div>
         </div>
@@ -69,16 +68,16 @@
                 <span>EDUCATION</span>
             </h1>
 
-            <div id="edu-container">
-                <div class="edu-box">
+            <div id="edu-container" >
+                <div class="edu-box" data-aos="fade-up">
                     <h1 class="edu-heading">Indian Institute of Technology, Patna</h1>
                     <p class="edu-para">B.Tech in Electrical and Electronics Engineering, 2019 to present </p>
                 </div>
-                <div class="edu-box">
+                <div class="edu-box" data-aos="fade-up">
                    <h1 class="edu-heading">Ryan International School, Sanpada</h1>
                    <p class="edu-para">Senior Secondary, 2017 - 2019</p>
                 </div>
-                <div class="edu-box">
+                <div class="edu-box" data-aos="fade-up">
                     <h1 class="edu-heading">Ryan International School, Sanpada</h1>
                     <p class="edu-para">Secondary, 2016 - 2017</p>
                 </div>
@@ -95,7 +94,7 @@
                 <span>Javascript</span> <span>C/C++</span> <span>MongoDB</span> <span>Git</span>
                 <span>Github</span> <span>Machine Learning</span> <span>Numpy</span> 
                 <span>Pandas</span> <span>Matplotlib</span> <span>NLP</span> 
-                <span>Data Science</span> <span>Bootstrap</span> <span>HTML/CSS</span>
+                <span>Data Science</span> <span>Bootstrap</span>
             </div>
         </section>
    </div>
@@ -108,25 +107,25 @@
         <span>PROJECTS</span>
       </h1>
       <div class="flex project-container">
-        <div class="project-box">
-          <a href="https://github.com/abhishekgupta3/Daily-Journal-Blog">
+        <div class="project-box" data-aos="fade-up">
+          <a>
           <h1 class="pro-heading"> Blog Application</h1>
-          <p class="pro-para">Nov 2020 to present</p>
-          <p class="pro-para">A simple blog Web app. Developed using Node, Express, MongoDB. Users can post and read blogs. Authentication using Passport.js</p>
+          <p class="pro-para">Nov 2020 to May 2021</p>
+          <p class="pro-para">A simple blog Web app. Users can post and read blogs. Developed using Node, Express and MongoDB.</p>
           </a>
         </div>
 
-        <div class="project-box">
-          <a href="https://github.com/abhishekgupta3/CoronaTracker">
+        <div class="project-box" data-aos="fade-up">
+          <a>
           <h1 class="pro-heading" >COVID-19 Tracker</h1>
           <p class="pro-para">August 2020 to present</p>
           <p class="pro-para">
-            Developed a corona virus tracker that fetches data using AJAX. Mapbox used to display the number of total cases worldwide. 
+            Developed a corona virus tracker that fetches data using AJAX. Used Mapbox  to display the number of total cases worldwide. 
           </p>
         </a>
         </div>
 
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <a>
           <h1 class="pro-heading">Auto Suggest and Auto Complete</h1>
           <p class="pro-para">Feb 2021 - Mar 2021</p>
@@ -134,7 +133,7 @@
           </a>
         </div>
 
-        <div class="project-box">
+        <div class="project-box" data-aos="fade-up">
           <a>
           <h1 class="pro-heading">Sentiment Analysis</h1>
           <p class="pro-para">Mar 2021 - Apr 2021 </p>
@@ -192,7 +191,8 @@
 
     <!-- footer -->
     <footer class="flex">
-      <p>Copyright &copy; All rights reserved Abhishek Gupta.</p>
+      <div>Copyright &copy; 2021. All rights reserved </div>
+      <!-- <div> Abhishek Gupta.</div> -->
     </footer>
 
 
@@ -205,6 +205,7 @@
       AOS.init({
         offset: 250,
         duration: 1000,
+        once: true
       });
     </script>
 
