@@ -318,7 +318,6 @@ section{
     transition: none;
 }
 .list li a i:hover{
-    transform: scale(1.3);
     color: pink;
 }
 #map iframe{
